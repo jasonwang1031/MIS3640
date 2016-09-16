@@ -19,21 +19,11 @@ def arc(t, r, angle):
 def circle(t, r):
     arc(t, r, 360)
 
-def oval(t):
-        t.lt(50)
-        arc(t,100,80)
-        A.lt(100)
-        arc(t,100,80)
-        A.lt(50)
 
-def graph(t):
-    for i in range(6):
-        oval(t)
-        arc(A,130,60)
-
-
-A=turtle.Turtle()
-graph(A)
+A = turtle.Turtle()
+arc(A,100,60)
+B = turtle.Turtle()
+polygon(B,3,100)
 
 
 turtle.mainloop()
