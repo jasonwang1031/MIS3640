@@ -1,0 +1,9 @@
+name = ['Rose', 'Jerry', 'Alex']
+scores = [95,75,85]
+
+print(scores[names.index['Jerry'})
+
+
+print(len(grades))
+print('Jerry' in grades)
+print(90 in grades.values())

@@ -1,4 +1,4 @@
-
+'''
 def nested_sum(t):
     """Computes the total of all numbers in a list of lists.
     t: list of list of numbers
@@ -141,13 +141,13 @@ print(has_adjacent_duplicates('abbc'))
 
 
 def binary_search(my_list, x):
-    '''
+    """
     this function adopts bisection/binary search to find the index of a given
     number in an ordered list
     my_list: an ordered list of numbers from smallest to largest
     x: a number
     returns the index of x if x is in my_list, None if not.
-    '''
+    """
     b = my_list[0:]
     n = len(my_list)
     
@@ -187,4 +187,13 @@ print(binary_search(test_list, 30))
 # 1
 # 8
 # None
+'''
 
+
+low = 0
+high = len(my_list) - 1
+while low<=high:
+    mid = int((low+high)/2)
+    if x == my_list[mid]:
+        return mid
+    elif x < my_list[mid]:
