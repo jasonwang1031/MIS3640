@@ -10,7 +10,7 @@ print(AFC_east)
 print(AFC_east[0:2])
 print(AFC_east[-3:])
 
-'''
+
 L = [
     ['Apple', 'Google', 'Microsoft'],
     ['Java', 'Python', ['Ruby','On Rail'], 'PHP'],
@@ -25,20 +25,33 @@ b=[4,5,6]
 c = a + b
 print (c)
 
-'''
 
 
 
-"""
-    Computes the total of all numbers in a list of lists.
+
+
+   # Computes the total of all numbers in a list of lists.
+  #  t: list of list of numbers
+  #  returns: number
+  #  Expected output:
+def nested_sum(t):
+    """Computes the total of all numbers in a list of lists.
     t: list of list of numbers
     returns: number
     Expected output:
     >>> t = [[1, 2], [3], [4, 5, 6]]
     >>> nested_sum(t)
     21
+    """
+    total = 0
+    for i in t:
+        total += sum(i)
+    return total
+t = [[1, 2], [3], [4, 5, 6]]
+sum(t)
+    
 
-
+'''
 def capitalize_all(t):
     res = []
     for s in t:
@@ -77,5 +90,5 @@ print(a is b)
 a = b
 b[0] = 'something else'
 print(a)
-"""
+'''
 

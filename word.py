@@ -33,8 +33,3 @@ def uses_only(word,available):
         else:
             return False
 '''
-fin = open('words.txt')
-for line in fin:
-    word = line.strip()
-    print(word)
-    print(type(line))
