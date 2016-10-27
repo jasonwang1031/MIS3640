@@ -1,4 +1,4 @@
-import os
+ximport os
 '''
 fout = open('output.txt','w')
 
